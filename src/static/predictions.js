@@ -1,7 +1,6 @@
 var url = `/predict`;
 
-var schoolName = [],
-    model = [],
+var model = [],
     no = [],
     prediction = [],
     probability = [];
@@ -21,8 +20,6 @@ d3.json(url).then((data) => {
         console.log(no),
         console.log(prediction),
         console.log(probability);
-
-
 
     google.charts.load('current', {
         callback: function () {
@@ -83,14 +80,6 @@ d3.json(url).then((data) => {
 
         var table = new google.visualization.Table(document.getElementById('table_div'));
         table.draw(data, { showRowNumber: true, width: '100%', height: '100%' });
-
-
-
-
-
-
-
-
 
     }
 })

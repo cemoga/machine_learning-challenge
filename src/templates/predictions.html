@@ -3,13 +3,19 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv=“Pragma” content=”no-cache”>
+    <meta http-equiv=“Expires” content=”-1″>
+    <meta http-equiv=“CACHE-CONTROL” content=”NO-CACHE”>
     <title>Predictions</title>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <link rel="shortcut icon" href="#" />
 </head>
 
 <body>Voila File uploaded
-    <div><img src="{{url_for('static',filename='image/test.jpg')}}" alt="Image to Predict" height="255px" width="255px" ></div>
+    <div class='button'>
+        <button type="button" class="btn btn-primary btn-lg btn-block"><a href='\'>New Image</a></button>
+    </div>
+    <div><img src="{{url_for('static',filename='image/test.jpg')}}" alt="Image to Predict" height="255px"></div>
     <div id="chart_div" style="width: 400px; height: 200px;"></div>
     <div id="table_div"></div>
 </body>
