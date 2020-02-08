@@ -67,6 +67,8 @@ This folder contains all the `HTMl` code used to display all the visualizations 
 3. 
 
 
+#### Authored by: Bill Bastan, Cesar Mosquera, Malini Murthy, Duyen Nguyen, Roma Patel, Nitin Sharma
+
 
 # Indoor Image Recognition ML Model 
 <a href="https://github.com/cemoga/machine_learning-challenge"><img alt="GitHub stars" src="https://img.shields.io/github/stars/cemoga/machine_learning-challenge?color=yellow"></a>
