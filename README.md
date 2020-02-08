@@ -55,7 +55,7 @@ It is only necessary to run the `model_predictions.ipynb` `Python Notebook`.
 This file contains the `Python` code necessary to create a `Flask` development server to deploy the visualizations created using `Javascript` libraries.
 
 ## static
-This folder contains all the `Javascript` code used to create the visualizations displayed through the HTMl files.
+This folder contains all the `Javascript` code used to create the visualizations displayed through the HTML files.
 ### Contents of Static
 0. `CSS` Folder containing CSS for html files.
 1. `guage.js` file that populates GoogleCharts on `index.html`.
