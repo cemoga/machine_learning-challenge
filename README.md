@@ -72,5 +72,7 @@ This folder contains all the `HTMl` code used to display all the visualizations 
 3. 
 
 
+#### Authored by: Bill Bastan, Cesar Mosquera, Malini Murthy, Duyen Nguyen, Roma Patel, Nitin Sharma
+
 
 
