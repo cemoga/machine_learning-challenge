@@ -1,7 +1,7 @@
 <h1>Machine Learning Challenge - Image Classification</h1>
 
 <h2>Description</h2>
-<h4>The purpose of this project is to display working knowledge in the areas of machine learning through pre-trained models and data visualization</h4>
+<h4>The purpose of this project is to display working knowledge in the areas of machine learning through pre-trained models and data visualization. The models used in this project were: VGG16, VGG19 and RESNET50</h4>
 <h4>Tools used in this project: </h4>
 <ol>
     <li>Python</li>
@@ -31,7 +31,7 @@
 <p> To run this code, ensure that all the above libraries are installed in your environment</p>
 
 #### Steps
-1. - Run the `RUNME.ipynb` `Python Notebook`. 
+1. - Run the `model_predictions.ipynb` `Python Notebook`. 
 2. - Run the `Flask` server by running the `app.py` file.
 3. - Run the IP address created by the `Flask` server which should look like http://127.0.0.1:5000/ or similar. This renders the index.html file containing the visualizations.
 
@@ -39,10 +39,10 @@
 
 ## API Python
 <b> Important Note:</b>
-It is only necessary to run the `RUNME.ipynb` `Python Notebook`.
+It is only necessary to run the `model_predictions.ipynb` `Python Notebook`.
 
 ### Files in Folder
-0. `0_RUN_ME.ipynb` is the master notebook that runs all the other notebooks.
+0. `model_predictions.ipynb` is the master notebook that runs all predictions though pre-trained models.
 1. 
 2. 
 
