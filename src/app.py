@@ -38,7 +38,7 @@ def index():
 
 @app.route("/upload", methods=['POST'])
 def upload():
-    target = os.path.join(APP_ROOT, 'image_upload')
+    target = os.path.join(APP_ROOT, 'static/image')
     print(target)
 
     if not os.path.isdir(target):
@@ -58,7 +58,7 @@ def upload():
 @app.route("/predict")
 
 def predict_image():
-    image_path = 'image_upload/test.jpg'
+    image_path = 'static/image/test.jpg'
     image_path = join(dirname(realpath(__file__)), image_path)
     ## For all Models
     # Load Image
