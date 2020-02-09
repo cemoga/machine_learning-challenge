@@ -12,17 +12,18 @@
     <li>Python</li>
     <ul type = "none"><li>Libraries: </li>
     <ol type = "i">
-        <li>Matplotlib</li>
-        <li>Numpy</li>
-        <li>TensorFlow</li>
-        <li>Keras</li>
-        <li>Flask</li>
-        <li>sklearn</li>
-        <li>cv2</li>
-        <li>random</li>
-        <li>OS</li>
-        <li>Math</li>
-        <li>tqdm</li>
+        - Matplotlib
+        - Numpy
+        - TensorFlow
+        - Keras
+        - Flask
+        - sklearn
+        - cv2
+        - random
+        - OS
+        - Math
+        - tqdm
+       
     </ol></ul>
     <li>HTML</li>
     <li>Javascript</li>
