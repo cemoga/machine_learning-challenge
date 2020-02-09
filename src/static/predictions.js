@@ -49,7 +49,7 @@ d3.json(url).then((data) => {
 
             var options = {
                 min: 0, max: 100,
-                width: 600, height: 200,
+                width: 500, height: 255,
                 redFrom: 0, redTo: 25,
                 yellowFrom: 25, yellowTo: 75,
                 greenFrom: 75, greenTo: 100,
