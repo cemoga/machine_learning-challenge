@@ -6,19 +6,48 @@
     <meta http-equiv=“Pragma” content=”no-cache”>
     <meta http-equiv=“Expires” content=”-1″>
     <meta http-equiv=“CACHE-CONTROL” content=”NO-CACHE”>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Predictions</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <link rel="shortcut icon" href="#" />
 </head>
 
-<body>Voila File Successfully Uploaded
-    <div class='button'>
-        <button type="button" class="btn btn-primary btn-lg btn-block"><a href='\'>New Image</a></button>
+<body>
+    <div class="container">
+        <div class='button'>
+            <button type="button" class="btn btn-primary"><a href='\' style="color: white;">New Image</a></button>
+        </div>
+        <div class="row">
+            <div class="col-12" style="text-align: center;">
+                <img src="{{url_for('static',filename='image/test.jpg')}}" alt="Image to Predict" height="255px">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12" style="text-align: center;">
+                <div id="chart_div" style="width: 400px; height: 200px;"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12" style="text-align: center;">
+                <div id="table_div"></div>
+            </div>
+        </div>
     </div>
-    <div><img src="{{url_for('static',filename='image/test.jpg')}}" alt="Image to Predict" height="255px"></div>
-    <div id="chart_div" style="width: 400px; height: 200px;"></div>
-    <div id="table_div"></div>
 </body>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
 <!-- Load d3.js -->
 <script src=" https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"> </script>
 <!-- Load predictions.js -->
