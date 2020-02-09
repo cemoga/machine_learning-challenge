@@ -25,9 +25,7 @@
 </ul>      
   </ol></ul>
   <li>HTML</li>
-  <li>Javascript</li>
-  <ul type = "none"><li>Libraries:</li> 
-  <ol type = "i">
+  <li>Javascript Libraries</li>
    <li>Google Charts</li>
     </ol></ul>
 </ol>
