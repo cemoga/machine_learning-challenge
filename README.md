@@ -8,27 +8,27 @@
 <h2>Description</h2>
 <h4>The purpose of this project is to display working knowledge in the areas of machine learning through pre-trained models and data visualization. The models used in this project were: VGG16, VGG19 and RESNET50</h4>
 <h4>Tools used in this project: </h4>
-<ol>
-    <li>Python</li>
-    <ul type = "none"><li>Libraries: </li>
-    <ol type = "i">
-        <li>Matplotlib</li>
-        <li>Numpy</li>
-        <li>TensorFlow</li>
-        <li>Keras</li>
-        <li>Flask</li>
-        <li>sklearn</li>
-        <li>cv2</li>
-        <li>random</li>
-        <li>OS</li>
-        <li>Math</li>
-        <li>tqdm</li>
-    </ol></ul>
-    <li>HTML</li>
-    <li>Javascript</li>
-    <ul type = "none"><li>Libraries:</li> 
-    <ol type = "i">
-        <li>Google Charts</li>
+    
+## Python Libraries
+<ul>
+<li>Matplotlib 1</li>
+<li>Numpy</li>
+<li>TensorFlow</li>
+<li>Keras</li>
+<li>Flask</li>
+<li>sklearn</li>
+<li>cv2</li>
+<li>random</li>
+<li>OS</li>
+<li>Math</li>
+<li>tqdm</li>
+</ul>      
+  </ol></ul>
+  <li>HTML</li>
+  <li>Javascript</li>
+  <ul type = "none"><li>Libraries:</li> 
+  <ol type = "i">
+   <li>Google Charts</li>
     </ol></ul>
 </ol>
 
