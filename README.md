@@ -34,22 +34,24 @@
 
 ## Instructions
 <p> To run this code, ensure that all the above libraries are installed in your environment</p>
+<b> Important Note:</b>
+It is only necessary to run the `app.py` `Python Flask App`.
 
 #### Steps
 1. - Run the `Flask` server by running the `app.py` file.
 2. - Run the IP address created by the `Flask` server which should look like http://127.0.0.1:5000/ or similar. This renders the index.html file containing the visualizations.
 3. - Upload an image of your choosing to run through the ML models. The predictions and accuracies will be displayed on the HTML page.
 
-# File Description
+# Directory Description
+1. CNN Model
+2. Pre-Trained Models Notebook
+3. SRC
 
-## API Python
-<b> Important Note:</b>
-It is only necessary to run the `app.py` `Python Flask App`.
+## CNN Model
+This file contains our teams custom CNN model as well as `Jupyter Notebooks` and other files used to support development of this model.
 
-### Files in Folder
-1. `model_predictions.ipynb` is the master notebook that runs all predictions though pre-trained models.
-2. 
-3. 
+## Pre-Trained Models Notebook
+1. `model_predictions.ipynb` is the master notebook that runs all predictions though pre-trained models. This was used to develop and test the code that is in app.py.
 
 ## src/app.py
 This file contains the `Python` code necessary to create a `Flask` development server to deploy the visualizations created using `Javascript` libraries.
@@ -69,6 +71,3 @@ This folder contains all the `HTMl` code used to display all the visualizations 
 
 
 #### Authored by: Bill Bastan, Cesar Mosquera, Malini Murthy, Duyen Nguyen, Roma Patel, Nitin Sharma
-
-
-
