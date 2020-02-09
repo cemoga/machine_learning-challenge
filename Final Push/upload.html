@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang=en-us>
+
+<head>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/superhero/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LS4/wo5Z/8SLpOLHs0IbuPAGOWTx30XSoZJ8o7WKH0UJhRpjXXTpODOjfVnNjeHu" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <title>Image Recognition 3</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary no-pad">
+
+        <a class="navbar-brand offset-1 alert-secondary bigger-block" href="index.html">
+            <h3>Image Prediction</h3>
+        </a>
+
+        <!--<div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="nav nav-pills offset-7">
+                
+            </ul>
+
+        </div>-->
+
+    </nav>
+
+
+
+    <div class="container">
+
+        <div class="row mt-4">
+
+            <div class="col-5">
+
+                <div class="jumbotron">
+
+                    <h4>Upload Image for Prediction</h4>
+
+                    <hr class="my-4">
+
+                    <form id="upload-form", action="{{url_for('upload') }}" method="POST" enctype="multipart/form-data">
+					<input type="file" name="file" accept="image/*" multiple>
+					<input type="submit" value="send">
+					</form>
+
+                    
+                </div>
+
+            </div>
+
+            <!--<div class="col-5">
+
+                <div class="jumbotron">
+
+                    <h2>Visualizations</h2>
+
+                    <hr class="my-4">
+
+                    <div class="row">
+                                                                 
+                    </div>
+
+                </div>--> 
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

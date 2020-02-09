@@ -1,0 +1,27 @@
+.blueback {background:#5bc0de; display: block; height:100%;}
+
+.no-pad {margin:0 !important;
+
+    padding: 0px !important;}
+
+.bigger-block{display: block; width: 220px; text-align: center;}
+
+  
+
+.regular-box {
+
+    min-height: 50px;
+
+    padding: 5px;
+
+    margin: 5px;
+
+    color: rgb(16, 81, 146);
+
+  }
+
+.active-link{
+
+    border: 5px solid #4e6cf0;
+
+  }
