@@ -48,6 +48,10 @@ def add_header(r):
 def index():
     return render_template("upload.html")
 
+@app.route("/models")
+def model():
+    return render_template("models.html")
+
 @app.route("/upload", methods=['POST'])
 def upload():
     target = os.path.join(APP_ROOT, 'static/image')

@@ -1,115 +1,57 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends "template.html" %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv=“Pragma” content=”no-cache”>
-    <meta http-equiv=“Expires” content=”-1″>
-    <meta http-equiv=“CACHE-CONTROL” content=”NO-CACHE”>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Predictions</title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <link rel="shortcut icon" href="{{url_for('static',filename='image/favicon.ico')}}" type="image/x-icon">
-    <!-- Our CSS -->
-    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
-</head>
+{% block title %} 
+<title>Predictions</title>
+{% endblock %}
 
-<body>
-    <div class="jumbotron container-fluid"
-        style="background: url('/static/css/jumbotron.jpg') no-repeat center center;  background-size: cover; padding-bottom: 5px; padding-top: 50px; margin-bottom:0">
-        <h1 class="display-4" style="color: lightgrey;">Convolutional Neural Network Predictor</h1>
-        <p class="lead" style="color: lightgrey;">This app will predict the contents of your image using the
-            Convolutional-Neural-Network models:
-            VGG16, VGG19, and RESNET50.</p>
-        <hr class="my-4">
-    </div>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary" style="padding-top: 0 ;">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
-            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href='\'>Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Documentation</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://github.com/cemoga/machine_learning-challenge" target="blank">Git
-                        Repository</a>
-                </li>
-            </ul>
+{% block head_scripts %}
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="hide" style="padding-top: 10px;">
+        <p>The models are computing the predictions for your image...</p>
+        <div class="progress">
+            <div id="dynamic" class="progress-bar progress-bar-success progress-bar-striped active"
+                role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+                <span id="current-progress"></span>
+            </div>
         </div>
-    </nav>
-    <div class="container">
-        <div class="hide" style="padding-top: 10px;">
-            <p>The models are computing the predictions for your image...</p>
-            <div class="progress">
-                <div id="dynamic" class="progress-bar progress-bar-success progress-bar-striped active"
-                    role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
-                    <span id="current-progress"></span>
+    </div>
+    <h1 class="show" style="color: rgb(11, 11, 75);"></h1>
+    <hr>
+    <div class="row" style="padding: 20px; padding-top: 10;">
+        <div class="col-sm-12 col-med-12 col-lg-6" style="text-align: center; overflow: hidden;">
+            <img src="{{url_for('static',filename='image/test.jpg')}}" alt="Image to Predict" height="255px">
+        </div>
+        <div class="col-sm-12 col-med-12 col-lg-6" style="padding-top: 50px; padding-bottom: 0; margin-bottom: 0;">
+            <div id="chart_div"> </div>
+            <div class="row" style="padding: 0px; margin-top: 0; font-size: small; font-weight: bold;">
+                <div class="col-sm-4" style="text-align: center;">
+                    <div class="label"></div>
+                </div>
+                <div class="col-sm-4" style="text-align: center;">
+                    <div class="label"></div>
+                </div>
+                <div class="col-sm-4" style="text-align: center;">
+                    <div class="label"></div>
                 </div>
             </div>
         </div>
-        <h1 class="show" style="color: rgb(11, 11, 75);"></h1>
-        <hr>
-        <div class="row" style="padding: 20px; padding-top: 10;">
-            <div class="col-sm-12 col-med-12 col-lg-6" style="text-align: center; overflow: hidden;">
-                <img src="{{url_for('static',filename='image/test.jpg')}}" alt="Image to Predict" height="255px">
-            </div>
-            <div class="col-sm-12 col-med-12 col-lg-6" style="padding-top: 50px; padding-bottom: 0; margin-bottom: 0;">
-                <div id="chart_div"> </div>
-                <div class="row" style="padding: 0px; margin-top: 0; font-size: small; font-weight: bold;">
-                    <div class="col-sm-4" style="text-align: center;">
-                        <div class="label"></div>
-                    </div>
-                    <div class="col-sm-4" style="text-align: center;">
-                        <div class="label"></div>
-                    </div>
-                    <div class="col-sm-4" style="text-align: center;">
-                        <div class="label"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row" style="padding: 20px;">
-            <div class="col-sm-12" style="text-align: center;">
-                <div id="table_div"></div>
-            </div>
-        </div>
-        <br><br><br><br><br><br><br><br><br><br><br>
     </div>
-    <!-- Footer -->
-    <footer class="page-footer font-small primary-color-dark"
-        style="background-color:rgb(0, 36, 68); color: lightgray;">
-        <!-- Copyright -->
-        <div class="footer-copyright text-center py-3">© 2020 Copyright:
-            <a href="https://github.com/cemoga/machine_learning-challenge" target="blank"> Rutgers Bootcamp Project
-                Group</a>
+    <div class="row" style="padding: 20px;">
+        <div class="col-sm-12" style="text-align: center;">
+            <div id="table_div"></div>
         </div>
-        <!-- Copyright -->
-    </footer>
-    <!-- Footer -->
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-    <!-- Load d3.js -->
-    <script src=" https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"> </script>
-    <!-- Load predictions.js -->
-    <script src="../static/predictions.js"></script>
-</body>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br>
+</div>
+{% endblock %}
 
-</html>
+{% block scripts %}
+<!-- Load d3.js -->
+<script src=" https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"> </script>
+<!-- Load predictions.js -->
+<script src="../static/predictions.js"></script>
+{% endblock %}
