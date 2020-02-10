@@ -32,6 +32,8 @@
 
 ## Instructions
 <p> To run this code, ensure that all the above libraries are installed in your environment</p>
+<b> Important Note:</b>
+It is only necessary to run the `app.py` `Python Flask App`.
 
 #### Steps
 1. - Run the `Flask` server by running the `app.py` file.
