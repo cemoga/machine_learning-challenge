@@ -1,3 +1,5 @@
+document.getElementsByClassName('show')[1].style.visibility = 'hidden';
+
 $(function () {
     var current_progress = 0;
     var interval = setInterval(function () {
@@ -10,7 +12,6 @@ $(function () {
             clearInterval(interval);
     }, 1000);
 });
-
 
 var url = `/predict`;
 
@@ -102,6 +103,7 @@ d3.json(url).then((data) => {
 
         document.getElementsByClassName('hide')[0].style.visibility = 'hidden';
         document.getElementsByClassName('show')[0].style.visibility = 'visible';
+        document.getElementsByClassName('show')[1].style.visibility = 'visible';
         document.getElementsByClassName('show')[0].innerHTML = 'Predictions';
 
         document.getElementsByClassName('label')[0].innerHTML = prediction[0][0];
