@@ -81,16 +81,21 @@ d3.json(url).then((data) => {
 
     function drawTable() {
         var data = new google.visualization.DataTable();
+        data.addColumn('number', 'Probability');
+        data.addColumn('string', 'Prediction')
         data.addColumn('string', 'Model');
-        data.addColumn('number', 'No.');
-        data.addColumn('string', 'Prediction');
-        data.addColumn('string', 'Probability');
+        data.addColumn('number', 'Model Prediction');
+        ;
 
         for (i = 0; i < 9; i++) {
             data.addRows([
-                [model[i], no[i], prediction[i][0], probability[i]]
+                [{ v: parseFloat(probability[i]), f: probability[i] }, prediction[i][0], model[i], no[i]]
             ])
         }
+
+
+        // sort by column 0, descending
+        data.sort({ column: 0, desc: true });
 
         var table = new google.visualization.Table(document.getElementById('table_div'));
         table.draw(data, { showRowNumber: true, width: '100%', height: '100%' });
