@@ -11,8 +11,9 @@
     
 ## Python Libraries
 <ul>
-<li>Matplotlib 1</li>
+<li>Matplotlib</li>
 <li>Numpy</li>
+<li>Pandas</li>
 <li>TensorFlow</li>
 <li>Keras</li>
 <li>Flask</li>
@@ -21,11 +22,11 @@
 <li>random</li>
 <li>OS</li>
 <li>Math</li>
-<li>tqdm</li>
 </ul>      
   </ol></ul>
   <li>HTML</li>
   <li>Javascript Libraries</li>
+  <li>D3</li>
    <li>Google Charts</li>
     </ol></ul>
 </ol>
