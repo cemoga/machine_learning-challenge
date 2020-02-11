@@ -17,7 +17,7 @@
 <li>Keras</li>
 <li>Flask</li>
 <li>sklearn</li>
-<li>cv2</li>
+<li>OpenCv - cv2</li>
 <li>random</li>
 <li>OS</li>
 <li>Math</li>
