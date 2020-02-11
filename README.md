@@ -25,9 +25,8 @@
 </ul>      
   </ol></ul>
   <li>HTML</li>
-  <li>Javascript Libraries</li>
-  <li>D3</li>
-   <li>Google Charts</li>
+  <li>Javascript Libraries - D3</li>
+  <li>Google Charts</li>
     </ol></ul>
 </ol>
 
