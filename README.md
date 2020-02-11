@@ -18,9 +18,7 @@
 <li>Flask</li>
 <li>sklearn</li>
 <li>OpenCv</li>
-<li>random</li>
 <li>OS</li>
-<li>Math</li>
 <li>tqdm</li>
 </ul>      
   </ol></ul>
