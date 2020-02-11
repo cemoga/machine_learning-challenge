@@ -9,7 +9,7 @@
 <h4>The purpose of this project is to display working knowledge in the areas of machine learning through pre-trained models and data visualization. The models used in this project were: VGG16, VGG19 and RESNET50</h4>
 <h4>Tools used in this project: </h4>
     
-## Python Libraries
+<h2>Python Libraries</h2>
 <ul>
 <li>Matplotlib</li>
 <li>Numpy</li>
@@ -21,11 +21,11 @@
 <li>OS</li>
 </ul>
 
-## HTML
+<h2> HTML </h2>
 
-## CSS
+<h2> CSS </h2>
 
-## Javascript
+<h2> Javascript </h2>
 <ul>
     <li>Google Charts</li>
     <li>D3</li>
