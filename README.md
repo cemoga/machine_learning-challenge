@@ -57,7 +57,8 @@ This file contains our team's custom CNN model as well as `Jupyter Notebooks` an
 This file contains the `Python` code necessary to create a `Flask` development server to deploy the visualizations created using `Javascript` libraries.
 
 ## pre_trained_models_notebook/static
-This folder contains all the `Javascript` code used to create the visualizations displayed through the HTML files.
+This folder contains all the `Javascript` code used to create the visualizations displayed through the HTML files and to load the data from the flask server.
+
 ### Contents of Static
 1. `CSS` Folder containing CSS for html files.
 2. `image` Folder that temporarily stores the user uploaded image.
