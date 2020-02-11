@@ -11,7 +11,7 @@
     
 ## Python Libraries
 <ul>
-<li>Matplotlib 1</li>
+<li>Matplotlib</li>
 <li>Numpy</li>
 <li>TensorFlow</li>
 <li>Keras</li>
