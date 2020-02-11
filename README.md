@@ -28,6 +28,8 @@
 ## Javascript
 <ul>
     <li>Google Charts</li>
+    <li>D3</li>
+    <li>Bootstrap</li>
 </ul>
 
 
