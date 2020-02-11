@@ -27,6 +27,7 @@
   <li>HTML</li>
   <li>Javascript Libraries - D3</li>
   <li>Google Charts</li>
+  <li>Sequential Model</li>
     </ol></ul>
 </ol>
 
