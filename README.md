@@ -19,7 +19,6 @@
 <li>scikit-learn</li>
 <li>OpenCv</li>
 <li>OS</li>
-<li>tqdm</li>
 </ul>      
   </ol></ul>
   <li>HTML</li>
