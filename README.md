@@ -48,7 +48,7 @@ It is only necessary to run the `app.py` `Python Flask App`.
 3. Pre-Trained Models App
 
 ## CNN Model Notebooks
-This file contains our teams custom CNN model as well as `Jupyter Notebooks` and other files used to support development of this model.
+This file contains our team's custom CNN model as well as `Jupyter Notebooks` and other files used to support the development of this model.
 
 ## Pre-Trained Models Notebook
 1. `model_predictions.ipynb` is the master notebook that runs all predictions though pre-trained models. This was used to develop and test the code that is in app.py.
