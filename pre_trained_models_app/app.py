@@ -52,6 +52,10 @@ def index():
 def model():
     return render_template("models.html")
 
+@app.route("/references")
+def references():
+    return render_template("references.html")
+
 @app.route("/upload", methods=['POST'])
 def upload():
     target = os.path.join(APP_ROOT, 'static/image')
