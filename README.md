@@ -19,15 +19,17 @@
 <li>Scikit-learn</li>
 <li>OpenCv</li>
 <li>OS</li>
-</ul>      
-  </ol></ul>
-  <li>HTML</li>
-  <li>Javascript</li>
-  <ul type = "none"><li>Libraries:</li> 
-  <ol type = "i">
-   <li>Google Charts</li>
-    </ol></ul>
-</ol>
+</ul>
+
+## HTML
+
+## CSS
+
+## Javascript
+<ul>
+    <li>Google Charts</li>
+</ul>
+
 
 ## Instructions
 <p> To run this code, ensure that all the above libraries are installed in your environment</p>
