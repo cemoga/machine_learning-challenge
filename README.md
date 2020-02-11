@@ -16,7 +16,7 @@
 <li>TensorFlow</li>
 <li>Keras</li>
 <li>Flask</li>
-<li>scikit-learn</li>
+<li>Scikit-learn</li>
 <li>OpenCv</li>
 <li>OS</li>
 </ul>      
