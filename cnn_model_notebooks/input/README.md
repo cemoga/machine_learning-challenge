@@ -2,7 +2,7 @@
 
 <hr>
 
-This folder name should be the same as the category name. The images should be organized in the structure described below
+The folder name should be the same as the category name. The images should be organized in the structure described below
 
 1. category_name_1
     * image_1.jpg
