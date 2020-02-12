@@ -10,3 +10,7 @@ footer{
   border-top: 15 px solid #007CBD;
   background-color: #004b87;
 }
+
+body {
+  margin-bottom: 100px;
+}
