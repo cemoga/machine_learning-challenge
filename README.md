@@ -5,6 +5,11 @@
 <a href="https://github.com/cemoga/machine_learning-challenge"><img alt="GitHub issues" src="https://img.shields.io/github/issues/cemoga/machine_learning-challenge"></a>
 <a href="https://github.com/cemoga/machine_learning-challenge"><img alt="GitHub license" src="https://img.shields.io/github/license/cemoga/machine_learning-challenge?color=red"></a>
 
+![App Running](screenshots/app.gif "App Running")
+<hr>
+
+
+
 <h2>Description</h2>
 <h4>The purpose of this project is to display working knowledge in the areas of machine learning through pre-trained models and data visualization. The models used in this project were: VGG16, VGG19 and RESNET50</h4>
 <h4>Tools used in this project: </h4>
