@@ -77,4 +77,4 @@ This folder contains all the `HTMl` code used to display all the visualizations 
 2. `upload.html` Page which allows the user to upload an image.
 
 
-#### Authored by: <a href = 'https://www.linkedin.com/in/william-bastan-3a1a149/'>Bill Bastan</a>, <a href = 'https://www.linkedin.com/in/cesarmosquera'>Cesar Mosquera</a>, <a href = 'https://www.linkedin.com/in/malini-murthy'>Malini Murthy</a>, <a href = 'https://www.linkedin.com/in/duyen-nguyen-a90b7741/'>Duyen Nguyen</a>, <a href = 'https://www.linkedin.com/in/romapatel21'>Roma Patel</a>, <a href = 'https://www.linkedin.com/in/nitin-sharma-23721517'>Nitin Sharma</a>
+#### Authored by: <a href = 'https://www.linkedin.com/in/william-bastan-3a1a149/'>Bill Bastan</a>, <a href = 'https://www.linkedin.com/in/cesarmosquera'>Cesar Mosquera</a>, <a href = 'https://www.linkedin.com/in/malini-murthy-193231187/'>Malini Murthy</a>, <a href = 'https://www.linkedin.com/in/duyen-nguyen-a90b7741/'>Duyen Nguyen</a>, <a href = 'https://www.linkedin.com/in/romapatel21'>Roma Patel</a>, <a href = 'https://www.linkedin.com/in/nitin-sharma-23721517'>Nitin Sharma</a>
