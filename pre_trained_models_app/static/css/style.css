@@ -14,3 +14,15 @@ footer{
 body {
   margin-bottom: 100px;
 }
+
+.pred_img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+.card-img-top {
+  height: 100px;
+  width: auto;
+  padding: 20px;
+}
