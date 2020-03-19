@@ -1,4 +1,4 @@
-<h1>Machine Learning Challenge - Image Classification</h1>
+<h1>Convolutional Neural Networks - Image Classification</h1>
 
 <a href="https://github.com/cemoga/machine_learning-challenge"><img alt="GitHub stars" src="https://img.shields.io/github/stars/cemoga/machine_learning-challenge?color=yellow"></a>
 <a href="https://github.com/cemoga/machine_learning-challenge"><img alt="GitHub forks" src="https://img.shields.io/github/forks/cemoga/machine_learning-challenge?color=yellow"></a>
